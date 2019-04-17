@@ -7,3 +7,10 @@
 
 #Input: [-7,-3,2,3,11]
 #Output: [4,9,9,49,121]
+numbers = [1, 2, 3, 4]
+def returnIntegers(alist) :
+	result = list()
+	for x in alist :
+		result.append(x * x)
+	return result
+print(returnIntegers(numbers))

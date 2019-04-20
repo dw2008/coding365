@@ -17,3 +17,12 @@
 #Input: [0,3,2,1]
 #Output: false
  
+def isSorted(alist) :
+    for i in range(1, len(alist)) :
+        if alist[i] >= alist[i -1] :
+            continue
+        else :
+            return False
+    return True
+numbers = [-1, 29, 3, 4, 5]
+print(isSorted(numbers))

@@ -7,6 +7,8 @@ riddles = [
 ["I come out of a cold morning's sigh", "And your freshly baked pie", "I am alive when I die", "And can arise from your chai"],
 ["An expert weaver", "Yet so small", "So many patterns", "But that's not all"],
 ["AAA"]
+["You've Yeed'", "Your last Haw"]
+["[Insert Yoshi theme here]"]
 ]
 answers = ["steam", "spider", "placeholder"]
 
@@ -31,6 +33,7 @@ def checkAnswer(answerlist, answer, index) :
         return False
 score = 0
 initScreen()
+
 indexa = genRan(riddles)
 printRiddle(riddles[indexa])
 answer = raw_input("What's the answer? (Use Lowercase) ")

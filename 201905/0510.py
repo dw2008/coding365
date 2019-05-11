@@ -55,11 +55,10 @@ score = 0
 sequence = generateProbSet(0, 5)
 initScreen()
 name = askName()
-indexa = genRan(riddles)
 for x in sequence :
     printRiddle(riddles[x])
     answer = askAnswer()
-    if checkAnswer(answers, answer, indexa) :
+    if checkAnswer(answers, answer, x) :
         line("Correct")
         score += 1
     else :

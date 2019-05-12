@@ -20,4 +20,4 @@ def getPos(alist, target) :
         return end + 1
     if target >= alist[start] and target < alist[end] :
         return end
-print(getPos(numbers, 5))
+print(getPos(numbers, 100))

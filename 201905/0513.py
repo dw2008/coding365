@@ -1,1 +1,16 @@
 #Use turtule to create a Target trademark symbol 
+import turtle
+turt = turtle.Turtle()
+despacito = turtle.Turtle()
+despacito.color("red")
+despacito.begin_fill()
+despacito.circle(100)
+despacito.end_fill()
+turt.penup()
+turt.goto(0, 50)
+turt.pendown()
+turt.color("white")
+turt.pensize(40)
+turt.circle(50)
+win=turtle.Screen()
+win.exitonclick()

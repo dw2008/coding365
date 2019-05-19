@@ -3,9 +3,9 @@
 number = input("Number ")
 def fibonacci(number) :
     if number <= 1:
-       return number
+        return number
     else:
-       return(fibonacci(number-1) + fibonacci(number-2))
+        return(fibonacci(number-1) + fibonacci(number-2))
 numberb = input("Another one ")
 for i in range(numberb):
-       print(fibonacci(i))
+    print(fibonacci(i))

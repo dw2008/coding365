@@ -10,3 +10,11 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 """
+def addTogeth(alist, target) :
+    for i in range(0, len(alist)) :
+        for j in range(i + 1, len(alist)) :
+            if alist[i] + alist[j] == target :
+                return i, j
+    return -1
+alist = [2, 7, 11, 15]
+print(addTogeth(alist, 18))

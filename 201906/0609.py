@@ -1,0 +1,20 @@
+spam = [2, 4, 6, 8, 10]
+spam.insert(2, 'hello')
+print(spam)
+spamtoo = ['a', 'b', 'c', 'd']
+print(spamtoo[int(int('3' * 2) // 11)])
+print(spamtoo[-1])
+print(spamtoo[:2])
+bacon = [3.14, 'cat', 11, 'cat', True]
+print(bacon.index('cat'))
+bacon.append(99)
+print(bacon)
+bacon.remove('cat')
+print(bacon)
+print(spam + bacon)
+print(bacon * 2)
+tupp = (42,)
+tupp2 = (1, 2, 3, 4)
+print(tupp[0])
+print(tuple(spam))
+print(list(tupp2))

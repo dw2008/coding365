@@ -1,0 +1,17 @@
+import re
+aaa = re.compile(r'^(?=.)(\d{1,3}(,\d{3})*)?(\.\d+)?$')
+dotall = re.compile(r'Yee', re.DOTALL)
+dotall2 = dotall.search('Yeeeeeeeee')
+print(dotall2)
+def numstrip(input) :
+    rex = re.compile(r'[a-z0-9]+')
+    result = rex.search(input)
+    return result.group()
+print(numstrip('auwer2buy278y8273g7r872g4'))
+numregex = re.compile(r'\d+')
+print(numregex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens'))
+bbb = aaa.search('12,344,567')
+print(bbb.group())
+nameFinder = re.compile(r'[A-Z][a-z]+\sDespacito$')
+nameFinder2 = nameFinder.search('Despacito Despacito')
+print(nameFinder2.group(0))

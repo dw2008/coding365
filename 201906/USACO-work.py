@@ -1,7 +1,9 @@
 cords1 = raw_input("1st pair (x1 y1 x2 y2) ")
+###only input input allowed is cords1, you have to caluate cords2. They are rectangular, right? 
 cords2 = raw_input("2nd pair (x3 y3 x4 y4) ")
 dif1 = int(cords1[4]) - int(cords2[0])
 dif2 = int(cords1[6]) - int(cords2[2])
+###No == True here needed 
 if dif1 < dif2 == True :
     result = dif2 * dif2
     print('Farmer John needs a pen of an area of ', result)
